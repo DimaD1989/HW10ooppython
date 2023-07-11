@@ -12,7 +12,7 @@ class Hex():
 
         while integer > 0:
             result += str(self.symbols[(
-                        integer % 16)])  # А что лучше, сразу задать чисто строковый массив или переводить элементы массива с строки, зато не надо будет каждый в кавычки брать?
+                        integer % 16)])
             integer = integer // 16
         return f"Ox{result[::-1]}"
 
